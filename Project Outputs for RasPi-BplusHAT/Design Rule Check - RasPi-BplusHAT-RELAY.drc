@@ -1,0 +1,135 @@
+Protel Design System Design Rule Check
+PCB File : E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc
+Date     : 08-Feb-17
+Time     : 10:41:47 AM
+
+Processing Rule : Clearance Constraint (Gap=6mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (IsPad),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (IsPad),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Track (304.402mil,-1334.693mil)(304.402mil,-1307.598mil)  Top
+   Violation between Net Antennae: Track (304.402mil,-1334.693mil)(304.402mil,-1307.598mil)  Top
+   Violation between Net Antennae: Track (1819.402mil,-1334.693mil)(1819.402mil,-1307.598mil)  Top
+   Violation between Net Antennae: Track (1819.402mil,-1334.693mil)(1819.402mil,-1307.598mil)  Top
+   Violation between Net Antennae: Track (1314.402mil,-1334.693mil)(1314.402mil,-1307.598mil)  Top
+   Violation between Net Antennae: Track (1314.402mil,-1334.693mil)(1314.402mil,-1307.598mil)  Top
+   Violation between Net Antennae: Track (809.402mil,-1334.693mil)(809.402mil,-1307.598mil)  Top
+   Violation between Net Antennae: Track (809.402mil,-1334.693mil)(809.402mil,-1307.598mil)  Top
+Rule Violations :8
+
+Processing Rule : Silk primitive without silk layer
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-145.354mil,-1772mil)(169.606mil,-1772mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-145.354mil,-1372mil)(169.606mil,-1372mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-145.354mil,-1772mil)(-145.354mil,-1372mil)  Top Overlay
+Rule Violations :3
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+Rule Violations :18
+
+Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=12mil) (Max=100000mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=100000mil) (Preferred=10mil) (All)
+   Violation between Width Constraint: Track (304.402mil,-1334.693mil)(304.402mil,-1307.598mil)  Top
+   Violation between Width Constraint: Track (1819.402mil,-1334.693mil)(1819.402mil,-1307.598mil)  Top
+   Violation between Width Constraint: Track (1314.402mil,-1334.693mil)(1314.402mil,-1307.598mil)  Top
+   Violation between Width Constraint: Track (809.402mil,-1334.693mil)(809.402mil,-1307.598mil)  Top
+Rule Violations :4
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net +3V3 Between Pad K1-17 (992,-50mil) And Pad U1-20 (1169.126,-421.158mil)
+Rule Violations :1
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Room RM1 (Bounding Region = (1293mil, 1000mil, 1798mil, 2589mil) (InComponentClass('RM1'))
+Rule Violations :0
+
+Processing Rule : Room RM2 (Bounding Region = (1798mil, 1000mil, 2303mil, 2589mil) (InComponentClass('RM2'))
+Rule Violations :0
+
+Processing Rule : Room RM3 (Bounding Region = (2303mil, 1000mil, 2808mil, 2589mil) (InComponentClass('RM3'))
+Rule Violations :0
+
+Processing Rule : Room RM4 (Bounding Region = (2808mil, 1000mil, 3313mil, 2589mil) (InComponentClass('RM4'))
+Rule Violations :0
+
+Processing Rule : Room RasPi-BplusHAT-RELAY (Bounding Region = (974mil, 974mil, 3585mil, 3223mil) (InComponentClass('RasPi-BplusHAT-RELAY'))
+Rule Violations :0
+
+
+Violations Detected : 34
+Time Elapsed        : 00:00:00

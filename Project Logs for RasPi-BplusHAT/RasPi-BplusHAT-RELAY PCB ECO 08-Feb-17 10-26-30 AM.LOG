@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetJ2_RM2_2 Pin=P2_RM2-1
+Removed Pin From Net: NetName=PGND Pin=P2_RM2-2
+Removed Pin From Net: NetName=NetJ2_RM3_2 Pin=P2_RM3-1
+Removed Pin From Net: NetName=PGND Pin=P2_RM3-2
+Removed Pin From Net: NetName=NetJ2_RM4_2 Pin=P2_RM4-1
+Removed Pin From Net: NetName=PGND Pin=P2_RM4-2
+Removed Member From Class: ClassName=RM2 Member=P2_RM2
+Removed Member From Class: ClassName=RM3 Member=P2_RM3
+Removed Member From Class: ClassName=RM4 Member=P2_RM4

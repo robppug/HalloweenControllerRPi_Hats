@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=NetK2_RM1_3 Pin=R1_RM1-2
+Added Net: Name=NetK2_RM1_3
+Added Pin To Net: NetName=NetK2_RM2_3 Pin=R1_RM2-2
+Added Net: Name=NetK2_RM2_3
+Added Pin To Net: NetName=NetK2_RM3_3 Pin=R1_RM3-2
+Added Net: Name=NetK2_RM3_3
+Added Pin To Net: NetName=NetK2_RM4_3 Pin=R1_RM4-2
+Added Net: Name=NetK2_RM4_3

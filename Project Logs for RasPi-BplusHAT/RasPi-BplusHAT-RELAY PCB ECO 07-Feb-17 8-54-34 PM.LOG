@@ -1,0 +1,6 @@
+Added Component: Designator=K2_RM1(G3MB-202P)
+Added Pin To Net: NetName=NetJ2_RM1_2 Pin=K2_RM1-1
+Added Pin To Net: NetName=NetJ2_RM1_1 Pin=K2_RM1-2
+Added Pin To Net: NetName=NetK2_RM1_3 Pin=K2_RM1-3
+Added Pin To Net: NetName=NetD1_RM1_C Pin=K2_RM1-4
+Added Member To Class: ClassName=RM1 Member=Component K2_RM1 (K2) G3MB-202P

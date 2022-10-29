@@ -1,0 +1,107 @@
+Removed Pin From Net: NetName=PGND Pin=J2_Designator1-2
+Removed Pin From Net: NetName=EXT_VCC Pin=Q2_Designator1-3
+Removed Pin From Net: NetName=PGND Pin=Q3_Designator1-2
+Removed Pin From Net: NetName=CH6 Pin=R9_Designator1-1
+Removed Pin From Net: NetName=GND Pin=R9_Designator1-2
+Change Component Designator: OldDesignator=D2_Designator2 NewDesignator=D2_RM1
+Change Component Designator: OldDesignator=D2_Designator3 NewDesignator=D2_RM2
+Change Component Designator: OldDesignator=D2_Designator4 NewDesignator=D2_RM3
+Change Component Designator: OldDesignator=D2_Designator5 NewDesignator=D2_RM4
+Change Component Designator: OldDesignator=D2_Designator6 NewDesignator=D2_RM5
+Change Component Designator: OldDesignator=J2_Designator2 NewDesignator=J2_RM1
+Change Component Designator: OldDesignator=J2_Designator3 NewDesignator=J2_RM2
+Change Component Designator: OldDesignator=J2_Designator4 NewDesignator=J2_RM3
+Change Component Designator: OldDesignator=J2_Designator5 NewDesignator=J2_RM4
+Change Component Designator: OldDesignator=J2_Designator6 NewDesignator=J2_RM5
+Change Component Designator: OldDesignator=Q2_Designator2 NewDesignator=Q2_RM1
+Change Component Designator: OldDesignator=Q2_Designator3 NewDesignator=Q2_RM2
+Change Component Designator: OldDesignator=Q2_Designator4 NewDesignator=Q2_RM3
+Change Component Designator: OldDesignator=Q2_Designator5 NewDesignator=Q2_RM4
+Change Component Designator: OldDesignator=Q2_Designator6 NewDesignator=Q2_RM5
+Change Component Designator: OldDesignator=Q3_Designator2 NewDesignator=Q3_RM1
+Change Component Designator: OldDesignator=Q3_Designator3 NewDesignator=Q3_RM2
+Change Component Designator: OldDesignator=Q3_Designator4 NewDesignator=Q3_RM3
+Change Component Designator: OldDesignator=Q3_Designator5 NewDesignator=Q3_RM4
+Change Component Designator: OldDesignator=Q3_Designator6 NewDesignator=Q3_RM5
+Change Component Designator: OldDesignator=R9_Designator2 NewDesignator=R9_RM1
+Change Component Designator: OldDesignator=R9_Designator3 NewDesignator=R9_RM2
+Change Component Designator: OldDesignator=R9_Designator4 NewDesignator=R9_RM3
+Change Component Designator: OldDesignator=R9_Designator5 NewDesignator=R9_RM4
+Change Component Designator: OldDesignator=R9_Designator6 NewDesignator=R9_RM5
+Change Net Name : Old Net Name=NetD2_Designator2_C New Net Name=NetD2_RM1_C
+Change Net Name : Old Net Name=NetD2_Designator3_C New Net Name=NetD2_RM2_C
+Change Net Name : Old Net Name=NetD2_Designator4_C New Net Name=NetD2_RM3_C
+Change Net Name : Old Net Name=NetD2_Designator5_C New Net Name=NetD2_RM4_C
+Change Net Name : Old Net Name=NetD2_Designator6_C New Net Name=NetD2_RM5_C
+Change Net Name : Old Net Name=NetJ2_Designator2_1 New Net Name=NetJ2_RM1_1
+Change Net Name : Old Net Name=NetJ2_Designator3_1 New Net Name=NetJ2_RM2_1
+Change Net Name : Old Net Name=NetJ2_Designator4_1 New Net Name=NetJ2_RM3_1
+Change Net Name : Old Net Name=NetJ2_Designator5_1 New Net Name=NetJ2_RM4_1
+Change Net Name : Old Net Name=NetJ2_Designator6_1 New Net Name=NetJ2_RM5_1
+Added Pin To Net: NetName=EXT_VCC_RM1 Pin=Q2_RM1-3
+Added Net: Name=EXT_VCC_RM1
+Added Pin To Net: NetName=EXT_VCC_RM2 Pin=Q2_RM2-3
+Added Net: Name=EXT_VCC_RM2
+Added Pin To Net: NetName=EXT_VCC_RM3 Pin=Q2_RM3-3
+Added Net: Name=EXT_VCC_RM3
+Added Pin To Net: NetName=EXT_VCC_RM4 Pin=Q2_RM4-3
+Added Net: Name=EXT_VCC_RM4
+Added Pin To Net: NetName=NetD2_RM1_A Pin=D2_RM1-A
+Added Pin To Net: NetName=NetD2_RM1_A Pin=Q2_RM1-1
+Added Net: Name=NetD2_RM1_A
+Added Pin To Net: NetName=NetD2_RM2_A Pin=D2_RM2-A
+Added Pin To Net: NetName=NetD2_RM2_A Pin=Q2_RM2-1
+Added Net: Name=NetD2_RM2_A
+Added Pin To Net: NetName=NetD2_RM3_A Pin=D2_RM3-A
+Added Pin To Net: NetName=NetD2_RM3_A Pin=Q2_RM3-1
+Added Net: Name=NetD2_RM3_A
+Added Pin To Net: NetName=NetD2_RM4_A Pin=D2_RM4-A
+Added Pin To Net: NetName=NetD2_RM4_A Pin=Q2_RM4-1
+Added Net: Name=NetD2_RM4_A
+Added Pin To Net: NetName=NetD2_RM5_A Pin=D2_RM5-A
+Added Pin To Net: NetName=NetD2_RM5_A Pin=Q2_RM5-1
+Added Net: Name=NetD2_RM5_A
+Added Pin To Net: NetName=NetQ3_RM1_1 Pin=Q3_RM1-1
+Added Net: Name=NetQ3_RM1_1
+Added Pin To Net: NetName=NetQ3_RM2_1 Pin=Q3_RM2-1
+Added Net: Name=NetQ3_RM2_1
+Added Pin To Net: NetName=NetQ3_RM3_1 Pin=Q3_RM3-1
+Added Net: Name=NetQ3_RM3_1
+Added Pin To Net: NetName=NetQ3_RM4_1 Pin=Q3_RM4-1
+Added Net: Name=NetQ3_RM4_1
+Added Pin To Net: NetName=NetQ3_RM5_1 Pin=Q3_RM5-1
+Added Net: Name=NetQ3_RM5_1
+Added Net: Name=NetR8_RM1_2
+Added Net: Name=NetR8_RM2_2
+Added Net: Name=NetR8_RM3_2
+Added Net: Name=NetR8_RM4_2
+Added Net: Name=NetR8_RM5_2
+Added Net: Name=NetR10_RM1_1
+Added Net: Name=NetR10_RM2_1
+Added Net: Name=NetR10_RM3_1
+Added Net: Name=NetR10_RM4_1
+Added Net: Name=NetR10_RM5_1
+Added Pin To Net: NetName=PGND_RM1 Pin=J2_RM1-2
+Added Pin To Net: NetName=PGND_RM1 Pin=Q3_RM1-2
+Added Net: Name=PGND_RM1
+Added Pin To Net: NetName=PGND_RM2 Pin=J2_RM2-2
+Added Pin To Net: NetName=PGND_RM2 Pin=Q3_RM2-2
+Added Net: Name=PGND_RM2
+Added Pin To Net: NetName=PGND_RM3 Pin=J2_RM3-2
+Added Pin To Net: NetName=PGND_RM3 Pin=Q3_RM3-2
+Added Net: Name=PGND_RM3
+Added Pin To Net: NetName=PGND_RM4 Pin=J2_RM4-2
+Added Pin To Net: NetName=PGND_RM4 Pin=Q3_RM4-2
+Added Net: Name=PGND_RM4
+Change Class Name : Old Net Name=Designator2 New Net Name=RM1
+Change Class Name : Old Net Name=Designator3 New Net Name=RM2
+Change Class Name : Old Net Name=Designator4 New Net Name=RM3
+Change Class Name : Old Net Name=Designator5 New Net Name=RM4
+Change Class Name : Old Net Name=Designator6 New Net Name=RM5
+Change Room Name: Old Name=Designator5 New Name=RM3
+Change Room Scope: Old Scope=InComponentClass('Designator5') New Scope=InComponentClass('RM3')
+Change Room Name: Old Name=Designator6 New Name=RM4
+Change Room Scope: Old Scope=InComponentClass('Designator6') New Scope=InComponentClass('RM4')
+Added Room: Name=RM1
+Added Room: Name=RM2
+Added Room: Name=RM5

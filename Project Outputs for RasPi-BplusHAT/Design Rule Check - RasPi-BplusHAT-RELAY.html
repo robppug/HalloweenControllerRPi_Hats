@@ -1,0 +1,524 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body {
+			font-family : verdana;
+		}
+		td, th {
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;
+		}
+		th {
+			background-color : #A6CAF0;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+		}
+		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
+		}
+
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
+		{
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top
+
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
+		.front_matter_column1 {
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
+		}
+		
+		.front_matter_column2 {
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
+		}
+		.front_matter_column3 {
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
+		}
+		
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD15\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td Style="width:70%">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">08-Feb-17</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">10:41:47 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc" class="file"><acronym title="E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc">E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td Style="Width:30%">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">34</td></tr>
+</table>
+</td>
+</table>
+<hr><a name="IDEPM2XTOEDKEKODVERKEZCCGNKEYRU1CB5SVBPNJWHQPO4ZTV0SBG"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDJX1M2BAOO3XIBWJXEDQTUS2GGNBM1OC4DNHU0HCVHPOFBBJ2FTD">Clearance Constraint (Gap=6mil) (IsVia),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBCGJH305RF21CSPI32KHW2WRNLPVVOZB5M0Z1QPXOWCOZLTTRKFO">Clearance Constraint (Gap=6mil) (IsPad),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJKAQRSMP3L5OFJKJF1TLVEBSQIYEHZG3EPVFX2L0IESC40JHVKBE">Clearance Constraint (Gap=6mil) (IsPad),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSD3WW0ODDFJAKLTWR2Y5TY3PXSVI3PBPN3ULFJ4T4VTHHFS5QKL">Clearance Constraint (Gap=6mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAN5AVNZO2HZHKQJNEUZDSH1SRPYE523HUMELU3GGCTLJKQENBQ3">Clearance Constraint (Gap=6mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNTRCN2RMP3BZKNVS1HTUHVNX1DIZ0M5RMKS43HCZVDGYIWHMIGOP">Clearance Constraint (Gap=6mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHMD5RXFX5R0TFA12MTRV4YL1NB1ZYXYZ1VCAGFI5EDX1HI0XZXF">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNNXFJTMDYBLGNKMGVYTIBPCYEP3WGA34U0MRQGE2PQN0O4WO4ZIN">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTNZYPR5QY14HLVKLWCJICH0GVEXUJAFZN1YZGABYUXE0RVUZPUML">Silk primitive without silk layer</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQFGBMTUHTPILMF0SUXYPLRTYKIMMWXJ34YLKMPDW02F5UFNTBAAM">Silk to Silk (Clearance=10mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSL5D3AH5X4HDDA2PWF54ODDNFH0CDOQ0KAV0RBJYYCYQEPBJFQJL">Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEAEHIJFGCK4TN1FJLUBBJS1QANWHAZWEM4G3OTHIT0FFPEFS2GAP">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLNGZKAOI0YL3BO3DFGXOECIW5O3NURK0VYUSOCP52HEJ53QS4P1D">Hole To Hole Clearance (Gap=8mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMJASYEZV5GZAFWZ2RBOJZVSLZODKML2V2ZI1UTL4F5YUYIAILXOO">Hole Size Constraint (Min=12mil) (Max=100000mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPLLLE0HVQLVRBAHVNLNLPQ0XQIKJEWXQFXV5YDPYE2DH2TXMDPG">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5US1AM21G3YQNFDMB1KMS1SSJEMJQGLYIFNDLDOCMNEXXEG12CQI">Width Constraint (Min=6mil) (Max=100000mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFRYUE0CEEZTVJ03NREJPTWZTPCZ4LOQVAJJPOAKMDLSQKKLT3E3B">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQKEC43BK1ULOGISGU2O0UC1LUI24A4J4MGC3XAPKD0Z00Z1OXQ2O">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEO1EJMOXIO1ZHXMSMGT0BWHUKHLNWRXIHVC05HIKBLKVQJF1BXNK">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJBQ33NFYFC2RWVYNICHWQYLTOINJHHWIK40XNMRWXT4ZYU431AK">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYTWRHAK2RV0UOB542BID5V1DRN55YN2VPYCQTJMOG4ZQ424SP3TM">Room RM1 (Bounding Region = (1293mil, 1000mil, 1798mil, 2589mil) (InComponentClass('RM1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVCXFBR0F3PWQOPBPDUSSOY2NIFWM3KNQ0Q5DKVFMJL5CYQPMT5KE">Room RM2 (Bounding Region = (1798mil, 1000mil, 2303mil, 2589mil) (InComponentClass('RM2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZP324VKEUHP2FFQOT3LAK3F03CNZGGQYQ1CIUJC01JRTV30P520C">Room RM3 (Bounding Region = (2303mil, 1000mil, 2808mil, 2589mil) (InComponentClass('RM3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0BVTKTSHKNGVLSMYN0HQTSY0BJHIL4BK5KE3M2HAYTALBI01LSPK">Room RM4 (Bounding Region = (2808mil, 1000mil, 3313mil, 2589mil) (InComponentClass('RM4'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDF155BV42I0GFPZOT4TNR5AHODMDWBBO2WBNHHAD5FIRELBVT5MRD">Room RasPi-BplusHAT-RELAY (Bounding Region = (974mil, 974mil, 3585mil, 3223mil) (InComponentClass('RasPi-BplusHAT-RELAY'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">34</td>
+</tr>
+</table><br><hr><a name="IDNNXFJTMDYBLGNKMGVYTIBPCYEP3WGA34U0MRQGE2PQN0O4WO4ZIN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1438.902mil|Location2.X=1451.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1438.902mil|Location2.X=1451.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True">Net Antennae: Track (304.402mil,-1334.693mil)(304.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1438.902mil|Location2.X=1451.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1438.902mil|Location2.X=1451.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True">Net Antennae: Track (304.402mil,-1334.693mil)(304.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.902mil|Location2.X=2966.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.902mil|Location2.X=2966.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True">Net Antennae: Track (1819.402mil,-1334.693mil)(1819.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.902mil|Location2.X=2966.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.902mil|Location2.X=2966.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True">Net Antennae: Track (1819.402mil,-1334.693mil)(1819.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2448.902mil|Location2.X=2461.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2448.902mil|Location2.X=2461.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True">Net Antennae: Track (1314.402mil,-1334.693mil)(1314.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2448.902mil|Location2.X=2461.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2448.902mil|Location2.X=2461.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True">Net Antennae: Track (1314.402mil,-1334.693mil)(1314.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1943.902mil|Location2.X=1956.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1943.902mil|Location2.X=1956.605mil|Location1.Y=1728.807mil|Location2.Y=1745.056mil|Absolute=True">Net Antennae: Track (809.402mil,-1334.693mil)(809.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1943.902mil|Location2.X=1956.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1943.902mil|Location2.X=1956.605mil|Location1.Y=1755.902mil|Location2.Y=1772.15mil|Absolute=True">Net Antennae: Track (809.402mil,-1334.693mil)(809.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDTNZYPR5QY14HLVKLWCJICH0GVEXUJAFZN1YZGABYUXE0RVUZPUML"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk primitive without silk layer</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1042.889mil|Location2.X=1285.693mil|Location1.Y=1187.763mil|Location2.Y=1402.237mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1042.889mil|Location2.X=1285.693mil|Location1.Y=1187.763mil|Location2.Y=1402.237mil|Absolute=True">Silk To Board Region Clearance (Out of silkscreen region) : Track (-145.354mil,-1772mil)(169.606mil,-1772mil)  Top Overlay</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1042.889mil|Location2.X=1285.693mil|Location1.Y=1587.763mil|Location2.Y=1802.237mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1042.889mil|Location2.X=1285.693mil|Location1.Y=1587.763mil|Location2.Y=1802.237mil|Absolute=True">Silk To Board Region Clearance (Out of silkscreen region) : Track (-145.354mil,-1372mil)(169.606mil,-1372mil)  Top Overlay</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=990.396mil|Location2.X=1023.226mil|Location1.Y=1492.75mil|Location2.Y=1497.25mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=990.396mil|Location2.X=1023.226mil|Location1.Y=1492.75mil|Location2.Y=1497.25mil|Absolute=True">Silk To Board Region Clearance (Out of silkscreen region) : Track (-145.354mil,-1772mil)(-145.354mil,-1372mil)  Top Overlay</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDEAEHIJFGCK4TN1FJLUBBJS1QANWHAZWEM4G3OTHIT0FFPEFS2GAP"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2635.905mil|Location2.Y=2655.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2635.905mil|Location2.Y=2655.78mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2866.22mil|Location2.Y=2886.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2866.22mil|Location2.Y=2886.095mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2513.437mil|Location2.X=2560.311mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2866.22mil|Location2.Y=2886.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2866.22mil|Location2.Y=2886.095mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2840.63mil|Location2.Y=2860.504mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2815.039mil|Location2.Y=2834.913mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2789.449mil|Location2.Y=2809.323mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2763.858mil|Location2.Y=2783.732mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2738.268mil|Location2.Y=2758.142mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2712.677mil|Location2.Y=2732.551mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2687.087mil|Location2.Y=2706.961mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2635.905mil|Location2.Y=2655.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2635.905mil|Location2.Y=2655.78mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2283.689mil|Location2.X=2330.563mil|Location1.Y=2661.496mil|Location2.Y=2681.37mil|Absolute=True">Region (0 hole(s)) Top Solder</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="ID5US1AM21G3YQNFDMB1KMS1SSJEMJQGLYIFNDLDOCMNEXXEG12CQI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Width Constraint (Min=6mil) (Max=100000mil) (Preferred=10mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1436.372mil|Location2.X=1448.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1436.372mil|Location2.X=1448.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True">Width Constraint: Track (304.402mil,-1334.693mil)(304.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2951.372mil|Location2.X=2963.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2951.372mil|Location2.X=2963.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True">Width Constraint: Track (1819.402mil,-1334.693mil)(1819.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2446.372mil|Location2.X=2458.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2446.372mil|Location2.X=2458.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True">Width Constraint: Track (1314.402mil,-1334.693mil)(1314.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1941.372mil|Location2.X=1953.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1941.372mil|Location2.X=1953.332mil|Location1.Y=1740.854mil|Location2.Y=1796.428mil|Absolute=True">Width Constraint: Track (809.402mil,-1334.693mil)(809.402mil,-1307.598mil)  Top</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDEO1EJMOXIO1ZHXMSMGT0BWHUKHLNWRXIHVC05HIKBLKVQJF1BXNK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2098.472mil|Location2.X=2326.626mil|Location1.Y=2639.843mil|Location2.Y=3048.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Halloween Controller RPi v1.0\RasPi-BplusHAT-RELAY.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2098.472mil|Location2.X=2326.626mil|Location1.Y=2639.843mil|Location2.Y=3048.528mil|Absolute=True">Un-Routed Net Constraint: Net +3V3 Between Pad K1-17 (992,-50mil) And Pad U1-20 (1169.126,-421.158mil)</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

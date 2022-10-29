@@ -1,0 +1,388 @@
+Protel Design System Design Rule Check
+PCB File : E:\Halloween Controller RPi v1.0\RasPiHAT-MOSFET.PcbDoc
+Date     : 11-Feb-17
+Time     : 9:06:33 AM
+
+Processing Rule : Room RasPiHAT-MOSFET (Bounding Region = (23.19mm, 25.324mm, 90.754mm, 81.585mm) (InComponentClass('RasPiHAT-MOSFET'))
+Rule Violations :0
+
+Processing Rule : Room RM5 (Bounding Region = (74.498mm, 25.4mm, 84.887mm, 60.249mm) (InComponentClass('RM5'))
+Rule Violations :0
+
+Processing Rule : Room RM2 (Bounding Region = (42.494mm, 25.4mm, 52.883mm, 60.249mm) (InComponentClass('RM2'))
+Rule Violations :0
+
+Processing Rule : Room RM1 (Bounding Region = (31.826mm, 25.4mm, 42.215mm, 60.249mm) (InComponentClass('RM1'))
+Rule Violations :0
+
+Processing Rule : Room RM4 (Bounding Region = (63.83mm, 25.4mm, 74.219mm, 60.249mm) (InComponentClass('RM4'))
+Rule Violations :0
+
+Processing Rule : Room RM3 (Bounding Region = (53.162mm, 25.4mm, 63.551mm, 60.249mm) (InComponentClass('RM3'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net +3V3 Between Track on layer Top (29.896,-13.335mm) And Track on layer Bottom (31.155,-7.228mm)
+Rule Violations :1
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=2540mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.305mm) (Max=2540mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.203mm) (All),(All)
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Via (27.432mm,-36.322mm) Top to Bottom
+   Violation between Via (15.24mm,-36.322mm) Top to Bottom and 
+                     Via (15.24mm,-36.322mm) Top to Bottom
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Via (16.764mm,-36.322mm) Top to Bottom
+   Violation between Via (25.908mm,-36.322mm) Top to Bottom and 
+                     Via (25.908mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+Rule Violations :16
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Via (54.864mm,-34.798mm) Top to Bottom and 
+                     Pad R1_RM5-1(54.864mm,-36.184mm)  Top
+   Violation between Via (44.196mm,-34.798mm) Top to Bottom and 
+                     Pad R1_RM4-1(44.196mm,-36.184mm)  Top
+   Violation between Via (33.528mm,-34.798mm) Top to Bottom and 
+                     Pad R1_RM3-1(33.528mm,-36.184mm)  Top
+   Violation between Via (22.86mm,-34.798mm) Top to Bottom and 
+                     Pad R1_RM2-1(22.86mm,-36.184mm)  Top
+   Violation between Via (12.192mm,-34.798mm) Top to Bottom and 
+                     Pad R1_RM1-1(12.192mm,-36.184mm)  Top
+   Violation between Via (4.572mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM1-8(4.191mm,-37.9mm)  Top
+   Violation between Via (4.572mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM1-7(5.461mm,-37.9mm)  Top
+   Violation between Via (6.096mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM1-7(5.461mm,-37.9mm)  Top
+   Violation between Via (7.62mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM1-6(6.731mm,-37.9mm)  Top
+   Violation between Via (6.096mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM1-6(6.731mm,-37.9mm)  Top
+   Violation between Via (7.62mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM1-5(8.001mm,-37.9mm)  Top
+   Violation between Via (15.24mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-8(14.859mm,-37.9mm)  Top
+   Violation between Via (15.24mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-8(14.859mm,-37.9mm)  Top
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-7(16.129mm,-37.9mm)  Top
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-7(16.129mm,-37.9mm)  Top
+   Violation between Via (15.24mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-7(16.129mm,-37.9mm)  Top
+   Violation between Via (15.24mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-7(16.129mm,-37.9mm)  Top
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-6(17.399mm,-37.9mm)  Top
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-6(17.399mm,-37.9mm)  Top
+   Violation between Via (18.288mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-6(17.399mm,-37.9mm)  Top
+   Violation between Via (18.288mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM2-5(18.669mm,-37.9mm)  Top
+   Violation between Via (25.908mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-8(25.527mm,-37.9mm)  Top
+   Violation between Via (25.908mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-8(25.527mm,-37.9mm)  Top
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-7(26.797mm,-37.9mm)  Top
+   Violation between Via (25.908mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-7(26.797mm,-37.9mm)  Top
+   Violation between Via (25.908mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-7(26.797mm,-37.9mm)  Top
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-7(26.797mm,-37.9mm)  Top
+   Violation between Via (28.956mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-6(28.067mm,-37.9mm)  Top
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-6(28.067mm,-37.9mm)  Top
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-6(28.067mm,-37.9mm)  Top
+   Violation between Via (28.956mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM3-5(29.337mm,-37.9mm)  Top
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-8(36.195mm,-37.9mm)  Top
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-8(36.195mm,-37.9mm)  Top
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-8(36.195mm,-37.9mm)  Top
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-7(37.465mm,-37.9mm)  Top
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-7(37.465mm,-37.9mm)  Top
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-7(37.465mm,-37.9mm)  Top
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-7(37.465mm,-37.9mm)  Top
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-7(37.465mm,-37.9mm)  Top
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-7(37.465mm,-37.9mm)  Top
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-6(38.735mm,-37.9mm)  Top
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-6(38.735mm,-37.9mm)  Top
+   Violation between Via (39.624mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-6(38.735mm,-37.9mm)  Top
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-6(38.735mm,-37.9mm)  Top
+   Violation between Via (39.624mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM4-5(40.005mm,-37.9mm)  Top
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-8(46.863mm,-37.9mm)  Top
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-8(46.863mm,-37.9mm)  Top
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-8(46.863mm,-37.9mm)  Top
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-7(48.133mm,-37.9mm)  Top
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-7(48.133mm,-37.9mm)  Top
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-7(48.133mm,-37.9mm)  Top
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-7(48.133mm,-37.9mm)  Top
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-7(48.133mm,-37.9mm)  Top
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-7(48.133mm,-37.9mm)  Top
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-6(49.403mm,-37.9mm)  Top
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-6(49.403mm,-37.9mm)  Top
+   Violation between Via (50.292mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-6(49.403mm,-37.9mm)  Top
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-6(49.403mm,-37.9mm)  Top
+   Violation between Via (50.292mm,-36.322mm) Top to Bottom and 
+                     Pad Q1_RM5-5(50.673mm,-37.9mm)  Top
+   Violation between Via (4.572mm,-36.322mm) Top to Bottom and 
+                     Pad C5-2(4.445mm,-37.835mm)  Bottom
+   Violation between Via (6.096mm,-36.322mm) Top to Bottom and 
+                     Via (4.572mm,-36.322mm) Top to Bottom
+   Violation between Via (7.62mm,-36.322mm) Top to Bottom and 
+                     Via (6.096mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (39.624mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (50.292mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (28.956mm,-36.322mm) Top to Bottom and 
+                     Via (27.432mm,-36.322mm) Top to Bottom
+   Violation between Via (25.908mm,-36.322mm) Top to Bottom and 
+                     Via (27.432mm,-36.322mm) Top to Bottom
+   Violation between Via (25.908mm,-36.322mm) Top to Bottom and 
+                     Via (27.432mm,-36.322mm) Top to Bottom
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Via (15.24mm,-36.322mm) Top to Bottom
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Via (15.24mm,-36.322mm) Top to Bottom
+   Violation between Via (15.24mm,-36.322mm) Top to Bottom and 
+                     Via (16.764mm,-36.322mm) Top to Bottom
+   Violation between Via (18.288mm,-36.322mm) Top to Bottom and 
+                     Via (16.764mm,-36.322mm) Top to Bottom
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Via (25.908mm,-36.322mm) Top to Bottom
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Via (18.288mm,-36.322mm) Top to Bottom
+   Violation between Via (16.764mm,-36.322mm) Top to Bottom and 
+                     Via (15.24mm,-36.322mm) Top to Bottom
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Via (28.956mm,-36.322mm) Top to Bottom
+   Violation between Via (27.432mm,-36.322mm) Top to Bottom and 
+                     Via (25.908mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (39.624mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (39.624mm,-36.322mm) Top to Bottom
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (36.576mm,-36.322mm) Top to Bottom and 
+                     Via (38.1mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (38.1mm,-36.322mm) Top to Bottom and 
+                     Via (36.576mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (50.292mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (50.292mm,-36.322mm) Top to Bottom
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (47.244mm,-36.322mm) Top to Bottom and 
+                     Via (48.768mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+   Violation between Via (48.768mm,-36.322mm) Top to Bottom and 
+                     Via (47.244mm,-36.322mm) Top to Bottom
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Region (0 hole(s)) Top Solder
+Rule Violations :124
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (61.519mm,0.762mm)(61.519mm,9.804mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-3.505mm,0.762mm)(-3.505mm,9.804mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (31.673mm,9.55mm)(61.519mm,9.55mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-3.505mm,9.55mm)(25.528mm,9.55mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (59.995mm,10.058mm)(61.519mm,9.55mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (59.995mm,9.042mm)(61.519mm,9.55mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-3.505mm,9.55mm)(-1.981mm,9.042mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-3.505mm,9.55mm)(-1.981mm,10.058mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (58.75mm,3.505mm)(67.285mm,3.505mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (58.496mm,-52.511mm)(67.285mm,-52.511mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (67.031mm,-21.837mm)(67.031mm,3.505mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (67.031mm,-52.511mm)(67.031mm,-27.982mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (66.523mm,1.981mm)(67.031mm,3.505mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (67.031mm,3.505mm)(67.539mm,1.981mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (67.031mm,-52.511mm)(67.539mm,-50.987mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (66.523mm,-50.987mm)(67.031mm,-52.511mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-5.451mm,-43.688mm)(2.549mm,-43.688mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-5.451mm,-43.688mm)(-5.451mm,-33.528mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-5.451mm,-33.528mm)(2.549mm,-33.528mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "6.50" (25.934mm,8.636mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "5.60" (67.945mm,-27.576mm)  Top Overlay
+Rule Violations :21
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (IsPad),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (IsPad),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (IsVia),(IsVia)
+Rule Violations :0
+
+
+Violations Detected : 162
+Time Elapsed        : 00:00:01

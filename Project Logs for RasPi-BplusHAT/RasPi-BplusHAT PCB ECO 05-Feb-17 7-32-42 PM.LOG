@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=PGND Pin=Q1_RM1-1
+Removed Pin From Net: NetName=PGND Pin=Q1_RM2-1
+Removed Pin From Net: NetName=PGND Pin=Q1_RM3-1
+Removed Pin From Net: NetName=PGND Pin=Q1_RM4-1
+Change Component DesignItemId : Designator=Q1_RM1 Old DesignItemId=2N3904 New DesignItemId=MMBT2222A
+Change Component DesignItemId : Designator=Q1_RM2 Old DesignItemId=2N3904 New DesignItemId=MMBT2222A
+Change Component DesignItemId : Designator=Q1_RM3 Old DesignItemId=2N3904 New DesignItemId=MMBT2222A
+Change Component DesignItemId : Designator=Q1_RM4 Old DesignItemId=2N3904 New DesignItemId=MMBT2222A
+Change Component Footprint: Designator=Q1_RM1 Old Footprint=TO-92A New Footprint=SOT23
+Change Component Footprint: Designator=Q1_RM2 Old Footprint=TO-92A New Footprint=SOT23
+Change Component Footprint: Designator=Q1_RM3 Old Footprint=TO-92A New Footprint=SOT23
+Change Component Footprint: Designator=Q1_RM4 Old Footprint=TO-92A New Footprint=SOT23
+Change Component Comment : Designator=Q1_RM1 Old Comment=P2N2222AG New Comment=MMBT2222A
+Change Component Comment : Designator=Q1_RM2 Old Comment=P2N2222AG New Comment=MMBT2222A
+Change Component Comment : Designator=Q1_RM3 Old Comment=P2N2222AG New Comment=MMBT2222A
+Change Component Comment : Designator=Q1_RM4 Old Comment=P2N2222AG New Comment=MMBT2222A
+Added Pin To Net: NetName=PGND Pin=Q1_RM1-2
+Added Pin To Net: NetName=PGND Pin=Q1_RM2-2
+Added Pin To Net: NetName=PGND Pin=Q1_RM3-2
+Added Pin To Net: NetName=PGND Pin=Q1_RM4-2
+Added Pin To Net: NetName=NetQ1_RM1_1 Pin=Q1_RM1-1
+Added Pin To Net: NetName=NetQ1_RM1_1 Pin=R4_RM1-2
+Added Net: Name=NetQ1_RM1_1
+Added Pin To Net: NetName=NetQ1_RM2_1 Pin=Q1_RM2-1
+Added Pin To Net: NetName=NetQ1_RM2_1 Pin=R4_RM2-2
+Added Net: Name=NetQ1_RM2_1
+Added Pin To Net: NetName=NetQ1_RM3_1 Pin=Q1_RM3-1
+Added Pin To Net: NetName=NetQ1_RM3_1 Pin=R4_RM3-2
+Added Net: Name=NetQ1_RM3_1
+Added Pin To Net: NetName=NetQ1_RM4_1 Pin=Q1_RM4-1
+Added Pin To Net: NetName=NetQ1_RM4_1 Pin=R4_RM4-2
+Added Net: Name=NetQ1_RM4_1

@@ -1,0 +1,80 @@
+Added Component: Designator=R7_RM1(6-0805_N)
+Added Component: Designator=R7_RM2(6-0805_N)
+Added Component: Designator=R7_RM3(6-0805_N)
+Added Component: Designator=R7_RM4(6-0805_N)
+Added Component: Designator=R7_RM5(6-0805_N)
+Added Component: Designator=R8_RM1(6-0805_N)
+Added Component: Designator=R8_RM2(6-0805_N)
+Added Component: Designator=R8_RM3(6-0805_N)
+Added Component: Designator=R8_RM4(6-0805_N)
+Added Component: Designator=R8_RM5(6-0805_N)
+Added Component: Designator=R10_RM1(6-0805_N)
+Added Component: Designator=R10_RM2(6-0805_N)
+Added Component: Designator=R10_RM3(6-0805_N)
+Added Component: Designator=R10_RM4(6-0805_N)
+Added Component: Designator=R10_RM5(6-0805_N)
+Added Component: Designator=R11_RM1(6-0805_N)
+Added Component: Designator=R11_RM2(6-0805_N)
+Added Component: Designator=R11_RM3(6-0805_N)
+Added Component: Designator=R11_RM4(6-0805_N)
+Added Component: Designator=R11_RM5(6-0805_N)
+Added Pin To Net: NetName=EXT_VCC_RM1 Pin=R7_RM1-1
+Added Pin To Net: NetName=NetD2_RM1_A Pin=R7_RM1-2
+Added Pin To Net: NetName=EXT_VCC_RM2 Pin=R7_RM2-1
+Added Pin To Net: NetName=NetD2_RM2_A Pin=R7_RM2-2
+Added Pin To Net: NetName=EXT_VCC_RM3 Pin=R7_RM3-1
+Added Pin To Net: NetName=NetD2_RM3_A Pin=R7_RM3-2
+Added Pin To Net: NetName=EXT_VCC_RM4 Pin=R7_RM4-1
+Added Pin To Net: NetName=NetD2_RM4_A Pin=R7_RM4-2
+Added Pin To Net: NetName=EXT_VCC Pin=R7_RM5-1
+Added Pin To Net: NetName=NetD2_RM5_A Pin=R7_RM5-2
+Added Pin To Net: NetName=CH5 Pin=R8_RM1-1
+Added Pin To Net: NetName=NetR8_RM1_2 Pin=R8_RM1-2
+Added Pin To Net: NetName=CH4 Pin=R8_RM2-1
+Added Pin To Net: NetName=NetR8_RM2_2 Pin=R8_RM2-2
+Added Pin To Net: NetName=CH3 Pin=R8_RM3-1
+Added Pin To Net: NetName=NetR8_RM3_2 Pin=R8_RM3-2
+Added Pin To Net: NetName=CH2 Pin=R8_RM4-1
+Added Pin To Net: NetName=NetR8_RM4_2 Pin=R8_RM4-2
+Added Pin To Net: NetName=CH1 Pin=R8_RM5-1
+Added Pin To Net: NetName=NetR8_RM5_2 Pin=R8_RM5-2
+Added Pin To Net: NetName=NetR10_RM1_1 Pin=R10_RM1-1
+Added Pin To Net: NetName=NetQ3_RM1_1 Pin=R10_RM1-2
+Added Pin To Net: NetName=NetR10_RM2_1 Pin=R10_RM2-1
+Added Pin To Net: NetName=NetQ3_RM2_1 Pin=R10_RM2-2
+Added Pin To Net: NetName=NetR10_RM3_1 Pin=R10_RM3-1
+Added Pin To Net: NetName=NetQ3_RM3_1 Pin=R10_RM3-2
+Added Pin To Net: NetName=NetR10_RM4_1 Pin=R10_RM4-1
+Added Pin To Net: NetName=NetQ3_RM4_1 Pin=R10_RM4-2
+Added Pin To Net: NetName=NetR10_RM5_1 Pin=R10_RM5-1
+Added Pin To Net: NetName=NetQ3_RM5_1 Pin=R10_RM5-2
+Added Pin To Net: NetName=NetQ3_RM1_1 Pin=R11_RM1-1
+Added Pin To Net: NetName=PGND_RM1 Pin=R11_RM1-2
+Added Pin To Net: NetName=NetQ3_RM2_1 Pin=R11_RM2-1
+Added Pin To Net: NetName=PGND_RM2 Pin=R11_RM2-2
+Added Pin To Net: NetName=NetQ3_RM3_1 Pin=R11_RM3-1
+Added Pin To Net: NetName=PGND_RM3 Pin=R11_RM3-2
+Added Pin To Net: NetName=NetQ3_RM4_1 Pin=R11_RM4-1
+Added Pin To Net: NetName=PGND_RM4 Pin=R11_RM4-2
+Added Pin To Net: NetName=NetQ3_RM5_1 Pin=R11_RM5-1
+Added Pin To Net: NetName=PGND Pin=R11_RM5-2
+Added Member To Class: ClassName=RM1 Member=Component R7_RM1 (R7) Res1
+Added Member To Class: ClassName=RM2 Member=Component R7_RM2 (R7) Res1
+Added Member To Class: ClassName=RM3 Member=Component R7_RM3 (R7) Res1
+Added Member To Class: ClassName=RM4 Member=Component R7_RM4 (R7) Res1
+Added Member To Class: ClassName=RM5 Member=Component R7_RM5 (R7) Res1
+Added Member To Class: ClassName=RM1 Member=Component R8_RM1 (R8) Res1
+Added Member To Class: ClassName=RM2 Member=Component R8_RM2 (R8) Res1
+Added Member To Class: ClassName=RM3 Member=Component R8_RM3 (R8) Res1
+Added Member To Class: ClassName=RM4 Member=Component R8_RM4 (R8) Res1
+Added Member To Class: ClassName=RM5 Member=Component R8_RM5 (R8) Res1
+Added Member To Class: ClassName=RM1 Member=Component R10_RM1 (R10) Res1
+Added Member To Class: ClassName=RM2 Member=Component R10_RM2 (R10) Res1
+Added Member To Class: ClassName=RM3 Member=Component R10_RM3 (R10) Res1
+Added Member To Class: ClassName=RM4 Member=Component R10_RM4 (R10) Res1
+Added Member To Class: ClassName=RM5 Member=Component R10_RM5 (R10) Res1
+Added Member To Class: ClassName=RM1 Member=Component R11_RM1 (R11) Res1
+Added Member To Class: ClassName=RM2 Member=Component R11_RM2 (R11) Res1
+Added Member To Class: ClassName=RM3 Member=Component R11_RM3 (R11) Res1
+Added Member To Class: ClassName=RM4 Member=Component R11_RM4 (R11) Res1
+Added Member To Class: ClassName=RM5 Member=Component R11_RM5 (R11) Res1

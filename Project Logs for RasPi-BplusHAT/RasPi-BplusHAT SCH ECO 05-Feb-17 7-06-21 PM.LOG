@@ -1,0 +1,3 @@
+Remove Pin=U2-18 From Net=SCL
+Remove Pin=U2-19 From Net=SDA
+Change Component Footprint: Designator=K1 Old Footprint=PIN_20X2 New Footprint=HDR2X20

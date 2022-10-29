@@ -1,0 +1,155 @@
+*************************************************************
+FileName = RasPi-BplusHAT-RELAY.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top
+      File : RasPi-BplusHAT-RELAY.GTL
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Bottom
+      File : RasPi-BplusHAT-RELAY.GBL
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D18
+    D19
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : RasPi-BplusHAT-RELAY.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : RasPi-BplusHAT-RELAY.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : RasPi-BplusHAT-RELAY.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D42
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : RasPi-BplusHAT-RELAY.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D36
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : RasPi-BplusHAT-RELAY.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D20
+    D38
+*************************************************************
+

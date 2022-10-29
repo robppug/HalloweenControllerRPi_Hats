@@ -1,0 +1,18 @@
+Added Component: Designator=K2_RM2(G3MB-202P)
+Added Component: Designator=K2_RM3(G3MB-202P)
+Added Component: Designator=K2_RM4(G3MB-202P)
+Added Pin To Net: NetName=NetJ2_RM2_2 Pin=K2_RM2-1
+Added Pin To Net: NetName=NetJ2_RM2_1 Pin=K2_RM2-2
+Added Pin To Net: NetName=NetK2_RM2_3 Pin=K2_RM2-3
+Added Pin To Net: NetName=NetD1_RM2_C Pin=K2_RM2-4
+Added Pin To Net: NetName=NetJ2_RM3_2 Pin=K2_RM3-1
+Added Pin To Net: NetName=NetJ2_RM3_1 Pin=K2_RM3-2
+Added Pin To Net: NetName=NetK2_RM3_3 Pin=K2_RM3-3
+Added Pin To Net: NetName=NetD1_RM3_C Pin=K2_RM3-4
+Added Pin To Net: NetName=NetJ2_RM4_2 Pin=K2_RM4-1
+Added Pin To Net: NetName=NetJ2_RM4_1 Pin=K2_RM4-2
+Added Pin To Net: NetName=NetK2_RM4_3 Pin=K2_RM4-3
+Added Pin To Net: NetName=NetD1_RM4_C Pin=K2_RM4-4
+Added Member To Class: ClassName=RM2 Member=Component K2_RM2 (K2) G3MB-202P
+Added Member To Class: ClassName=RM3 Member=Component K2_RM3 (K2) G3MB-202P
+Added Member To Class: ClassName=RM4 Member=Component K2_RM4 (K2) G3MB-202P

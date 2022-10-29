@@ -1,0 +1,30 @@
+Added Component: Designator=U2_RM1(SOT254P975X400-4N)
+Added Component: Designator=U2_RM2(SOT254P975X400-4N)
+Added Component: Designator=U2_RM3(SOT254P975X400-4N)
+Added Component: Designator=U2_RM4(SOT254P975X400-4N)
+Added Component: Designator=U2_RM5(SOT254P975X400-4N)
+Added Pin To Net: NetName=NetR8_RM1_2 Pin=U2_RM1-1
+Added Pin To Net: NetName=GND Pin=U2_RM1-2
+Added Pin To Net: NetName=NetR10_RM1_1 Pin=U2_RM1-3
+Added Pin To Net: NetName=EXT_VCC_RM1 Pin=U2_RM1-4
+Added Pin To Net: NetName=NetR8_RM2_2 Pin=U2_RM2-1
+Added Pin To Net: NetName=GND Pin=U2_RM2-2
+Added Pin To Net: NetName=NetR10_RM2_1 Pin=U2_RM2-3
+Added Pin To Net: NetName=EXT_VCC_RM2 Pin=U2_RM2-4
+Added Pin To Net: NetName=NetR8_RM3_2 Pin=U2_RM3-1
+Added Pin To Net: NetName=GND Pin=U2_RM3-2
+Added Pin To Net: NetName=NetR10_RM3_1 Pin=U2_RM3-3
+Added Pin To Net: NetName=EXT_VCC_RM3 Pin=U2_RM3-4
+Added Pin To Net: NetName=NetR8_RM4_2 Pin=U2_RM4-1
+Added Pin To Net: NetName=GND Pin=U2_RM4-2
+Added Pin To Net: NetName=NetR10_RM4_1 Pin=U2_RM4-3
+Added Pin To Net: NetName=EXT_VCC_RM4 Pin=U2_RM4-4
+Added Pin To Net: NetName=NetR8_RM5_2 Pin=U2_RM5-1
+Added Pin To Net: NetName=GND Pin=U2_RM5-2
+Added Pin To Net: NetName=NetR10_RM5_1 Pin=U2_RM5-3
+Added Pin To Net: NetName=EXT_VCC Pin=U2_RM5-4
+Added Member To Class: ClassName=RM1 Member=Component U2_RM1 (U2) PC817X2NIP0F
+Added Member To Class: ClassName=RM2 Member=Component U2_RM2 (U2) PC817X2NIP0F
+Added Member To Class: ClassName=RM3 Member=Component U2_RM3 (U2) PC817X2NIP0F
+Added Member To Class: ClassName=RM4 Member=Component U2_RM4 (U2) PC817X2NIP0F
+Added Member To Class: ClassName=RM5 Member=Component U2_RM5 (U2) PC817X2NIP0F

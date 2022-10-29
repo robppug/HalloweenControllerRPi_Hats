@@ -1,0 +1,293 @@
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=+5V Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C2-1
+Removed Pin From Net: NetName=+3V3 Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=C3-1
+Removed Pin From Net: NetName=+3V3 Pin=C3-2
+Removed Pin From Net: NetName=GND Pin=P1-1
+Removed Pin From Net: NetName=GND Pin=P2-1
+Removed Pin From Net: NetName=GND Pin=P3-1
+Removed Pin From Net: NetName=+3V3 Pin=R1-1
+Removed Pin From Net: NetName=+3V3 Pin=R2-1
+Removed Pin From Net: NetName=+3V3 Pin=R3-1
+Removed Pin From Net: NetName=+3V3 Pin=R4-1
+Removed Pin From Net: NetName=GND Pin=R9_RM1-2
+Removed Pin From Net: NetName=GND Pin=R9_RM2-2
+Removed Pin From Net: NetName=GND Pin=R9_RM3-2
+Removed Pin From Net: NetName=GND Pin=R9_RM4-2
+Removed Pin From Net: NetName=SCL Pin=U1-1
+Removed Pin From Net: NetName=SDA Pin=U1-2
+Removed Pin From Net: NetName=GND Pin=U1-8
+Removed Pin From Net: NetName=+3V3 Pin=U1-16
+Removed Pin From Net: NetName=GND Pin=U2_RM1-2
+Removed Pin From Net: NetName=GND Pin=U2_RM2-2
+Removed Pin From Net: NetName=GND Pin=U2_RM3-2
+Removed Pin From Net: NetName=GND Pin=U2_RM4-2
+Added Component: Designator=C6(6-0805_N)
+Added Component: Designator=C7(6-0805_N)
+Added Component: Designator=C8(6-0805_N)
+Added Component: Designator=C9(6-0805_N)
+Added Component: Designator=C10(6-0805_N)
+Added Component: Designator=D2_Designator1(LEDSC200X125X70-2N_598-8160-107F(Primary))
+Added Component: Designator=D2_Designator2(LEDSC200X125X70-2N_598-8160-107F(Primary))
+Added Component: Designator=D2_Designator3(LEDSC200X125X70-2N_598-8160-107F(Primary))
+Added Component: Designator=D2_Designator4(LEDSC200X125X70-2N_598-8160-107F(Primary))
+Added Component: Designator=D2_Designator5(LEDSC200X125X70-2N_598-8160-107F(Primary))
+Added Component: Designator=D2_Designator6(LEDSC200X125X70-2N_598-8160-107F(Primary))
+Added Component: Designator=D4(LEDSC200X125X70-2N_598-8160-107F(Primary))
+Added Component: Designator=J2_Designator1(1760490000)
+Added Component: Designator=J2_Designator2(1760490000)
+Added Component: Designator=J2_Designator3(1760490000)
+Added Component: Designator=J2_Designator4(1760490000)
+Added Component: Designator=J2_Designator5(1760490000)
+Added Component: Designator=J2_Designator6(1760490000)
+Added Component: Designator=J4(1760490000)
+Added Component: Designator=Q2_Designator1(TO-220-AB)
+Added Component: Designator=Q2_Designator2(TO-220-AB)
+Added Component: Designator=Q2_Designator3(TO-220-AB)
+Added Component: Designator=Q2_Designator4(TO-220-AB)
+Added Component: Designator=Q2_Designator5(TO-220-AB)
+Added Component: Designator=Q2_Designator6(TO-220-AB)
+Added Component: Designator=Q3_Designator1(SOT23)
+Added Component: Designator=Q3_Designator2(SOT23)
+Added Component: Designator=Q3_Designator3(SOT23)
+Added Component: Designator=Q3_Designator4(SOT23)
+Added Component: Designator=Q3_Designator5(SOT23)
+Added Component: Designator=Q3_Designator6(SOT23)
+Added Component: Designator=R9_Designator1(6-0805_N)
+Added Component: Designator=R9_Designator2(6-0805_N)
+Added Component: Designator=R9_Designator3(6-0805_N)
+Added Component: Designator=R9_Designator4(6-0805_N)
+Added Component: Designator=R9_Designator5(6-0805_N)
+Added Component: Designator=R9_Designator6(6-0805_N)
+Added Component: Designator=R17(6-0805_N)
+Added Component: Designator=R18(6-0805_N)
+Added Component: Designator=R19(6-0805_N)
+Added Component: Designator=R20(6-0805_N)
+Added Component: Designator=R21(6-0805_N)
+Added Component: Designator=R22(6-0805_N)
+Added Component: Designator=R23(6-0805_N)
+Added Component: Designator=R24(6-0805_N)
+Added Component: Designator=R25(6-0805_N)
+Added Component: Designator=R26(6-0805_N)
+Added Component: Designator=S2(DIP-12/SW)
+Added Component: Designator=U4(SOP65P640X110-28N)
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=+3V3 Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=+3V3 Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=+3V3 Pin=C8-2
+Added Pin To Net: NetName=GND Pin=D4-C
+Added Pin To Net: NetName=GND Pin=R9_Designator1-2
+Added Pin To Net: NetName=GND Pin=R9_Designator2-2
+Added Pin To Net: NetName=GND Pin=R9_Designator3-2
+Added Pin To Net: NetName=GND Pin=R9_Designator4-2
+Added Pin To Net: NetName=GND Pin=R9_Designator5-2
+Added Pin To Net: NetName=GND Pin=R9_Designator6-2
+Added Pin To Net: NetName=+3V3 Pin=R17-1
+Added Pin To Net: NetName=SCL Pin=R17-2
+Added Pin To Net: NetName=+3V3 Pin=R18-1
+Added Pin To Net: NetName=SDA Pin=R18-2
+Added Pin To Net: NetName=+3V3 Pin=R19-1
+Added Pin To Net: NetName=+3V3 Pin=R20-1
+Added Pin To Net: NetName=+3V3 Pin=R21-1
+Added Pin To Net: NetName=+3V3 Pin=R22-1
+Added Pin To Net: NetName=+3V3 Pin=R23-1
+Added Pin To Net: NetName=+3V3 Pin=R24-1
+Added Pin To Net: NetName=+3V3 Pin=R25-1
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=GND Pin=S2-2
+Added Pin To Net: NetName=GND Pin=S2-3
+Added Pin To Net: NetName=GND Pin=S2-4
+Added Pin To Net: NetName=GND Pin=S2-5
+Added Pin To Net: NetName=GND Pin=S2-6
+Added Pin To Net: NetName=GND Pin=U4-14
+Added Pin To Net: NetName=GND Pin=U4-25
+Added Pin To Net: NetName=SCL Pin=U4-26
+Added Pin To Net: NetName=SDA Pin=U4-27
+Added Pin To Net: NetName=+3V3 Pin=U4-28
+Added Pin To Net: NetName=CH1 Pin=R9_Designator6-1
+Added Pin To Net: NetName=CH1 Pin=U4-6
+Added Net: Name=CH1
+Added Pin To Net: NetName=CH2 Pin=R9_Designator5-1
+Added Pin To Net: NetName=CH2 Pin=U4-7
+Added Net: Name=CH2
+Added Pin To Net: NetName=CH3 Pin=R9_Designator4-1
+Added Pin To Net: NetName=CH3 Pin=U4-8
+Added Net: Name=CH3
+Added Pin To Net: NetName=CH4 Pin=R9_Designator3-1
+Added Pin To Net: NetName=CH4 Pin=U4-9
+Added Net: Name=CH4
+Added Pin To Net: NetName=CH5 Pin=R9_Designator2-1
+Added Pin To Net: NetName=CH5 Pin=U4-10
+Added Net: Name=CH5
+Added Pin To Net: NetName=CH6 Pin=R9_Designator1-1
+Added Pin To Net: NetName=CH6 Pin=U4-11
+Added Net: Name=CH6
+Added Pin To Net: NetName=EEPROM_WC Pin=K1-11
+Added Net: Name=EEPROM_WC
+Added Pin To Net: NetName=EXT_VCC_Designator2 Pin=Q2_Designator2-3
+Added Net: Name=EXT_VCC_Designator2
+Added Pin To Net: NetName=EXT_VCC_Designator3 Pin=Q2_Designator3-3
+Added Net: Name=EXT_VCC_Designator3
+Added Pin To Net: NetName=EXT_VCC_Designator4 Pin=Q2_Designator4-3
+Added Net: Name=EXT_VCC_Designator4
+Added Pin To Net: NetName=EXT_VCC_Designator5 Pin=Q2_Designator5-3
+Added Net: Name=EXT_VCC_Designator5
+Added Pin To Net: NetName=EXT_VCC Pin=C9-2
+Added Pin To Net: NetName=EXT_VCC Pin=C10-2
+Added Pin To Net: NetName=EXT_VCC Pin=J4-1
+Added Pin To Net: NetName=EXT_VCC Pin=Q2_Designator1-3
+Added Pin To Net: NetName=EXT_VCC Pin=Q2_Designator6-3
+Added Net: Name=EXT_VCC
+Added Pin To Net: NetName=INTERRUPT Pin=K1-7
+Added Net: Name=INTERRUPT
+Added Pin To Net: NetName=NetD2_Designator1_A Pin=D2_Designator1-A
+Added Pin To Net: NetName=NetD2_Designator1_A Pin=Q2_Designator1-1
+Added Net: Name=NetD2_Designator1_A
+Added Pin To Net: NetName=NetD2_Designator1_C Pin=D2_Designator1-C
+Added Pin To Net: NetName=NetD2_Designator1_C Pin=Q3_Designator1-3
+Added Net: Name=NetD2_Designator1_C
+Added Pin To Net: NetName=NetD2_Designator2_A Pin=D2_Designator2-A
+Added Pin To Net: NetName=NetD2_Designator2_A Pin=Q2_Designator2-1
+Added Net: Name=NetD2_Designator2_A
+Added Pin To Net: NetName=NetD2_Designator2_C Pin=D2_Designator2-C
+Added Pin To Net: NetName=NetD2_Designator2_C Pin=Q3_Designator2-3
+Added Net: Name=NetD2_Designator2_C
+Added Pin To Net: NetName=NetD2_Designator3_A Pin=D2_Designator3-A
+Added Pin To Net: NetName=NetD2_Designator3_A Pin=Q2_Designator3-1
+Added Net: Name=NetD2_Designator3_A
+Added Pin To Net: NetName=NetD2_Designator3_C Pin=D2_Designator3-C
+Added Pin To Net: NetName=NetD2_Designator3_C Pin=Q3_Designator3-3
+Added Net: Name=NetD2_Designator3_C
+Added Pin To Net: NetName=NetD2_Designator4_A Pin=D2_Designator4-A
+Added Pin To Net: NetName=NetD2_Designator4_A Pin=Q2_Designator4-1
+Added Net: Name=NetD2_Designator4_A
+Added Pin To Net: NetName=NetD2_Designator4_C Pin=D2_Designator4-C
+Added Pin To Net: NetName=NetD2_Designator4_C Pin=Q3_Designator4-3
+Added Net: Name=NetD2_Designator4_C
+Added Pin To Net: NetName=NetD2_Designator5_A Pin=D2_Designator5-A
+Added Pin To Net: NetName=NetD2_Designator5_A Pin=Q2_Designator5-1
+Added Net: Name=NetD2_Designator5_A
+Added Pin To Net: NetName=NetD2_Designator5_C Pin=D2_Designator5-C
+Added Pin To Net: NetName=NetD2_Designator5_C Pin=Q3_Designator5-3
+Added Net: Name=NetD2_Designator5_C
+Added Pin To Net: NetName=NetD2_Designator6_A Pin=D2_Designator6-A
+Added Pin To Net: NetName=NetD2_Designator6_A Pin=Q2_Designator6-1
+Added Net: Name=NetD2_Designator6_A
+Added Pin To Net: NetName=NetD2_Designator6_C Pin=D2_Designator6-C
+Added Pin To Net: NetName=NetD2_Designator6_C Pin=Q3_Designator6-3
+Added Net: Name=NetD2_Designator6_C
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=NetD4_A Pin=R26-2
+Added Net: Name=NetD4_A
+Added Pin To Net: NetName=NetJ2_Designator1_1 Pin=J2_Designator1-1
+Added Pin To Net: NetName=NetJ2_Designator1_1 Pin=Q2_Designator1-2
+Added Net: Name=NetJ2_Designator1_1
+Added Pin To Net: NetName=NetJ2_Designator2_1 Pin=J2_Designator2-1
+Added Pin To Net: NetName=NetJ2_Designator2_1 Pin=Q2_Designator2-2
+Added Net: Name=NetJ2_Designator2_1
+Added Pin To Net: NetName=NetJ2_Designator3_1 Pin=J2_Designator3-1
+Added Pin To Net: NetName=NetJ2_Designator3_1 Pin=Q2_Designator3-2
+Added Net: Name=NetJ2_Designator3_1
+Added Pin To Net: NetName=NetJ2_Designator4_1 Pin=J2_Designator4-1
+Added Pin To Net: NetName=NetJ2_Designator4_1 Pin=Q2_Designator4-2
+Added Net: Name=NetJ2_Designator4_1
+Added Pin To Net: NetName=NetJ2_Designator5_1 Pin=J2_Designator5-1
+Added Pin To Net: NetName=NetJ2_Designator5_1 Pin=Q2_Designator5-2
+Added Net: Name=NetJ2_Designator5_1
+Added Pin To Net: NetName=NetJ2_Designator6_1 Pin=J2_Designator6-1
+Added Pin To Net: NetName=NetJ2_Designator6_1 Pin=Q2_Designator6-2
+Added Net: Name=NetJ2_Designator6_1
+Added Pin To Net: NetName=NetQ3_Designator1_1 Pin=Q3_Designator1-1
+Added Net: Name=NetQ3_Designator1_1
+Added Pin To Net: NetName=NetQ3_Designator2_1 Pin=Q3_Designator2-1
+Added Net: Name=NetQ3_Designator2_1
+Added Pin To Net: NetName=NetQ3_Designator3_1 Pin=Q3_Designator3-1
+Added Net: Name=NetQ3_Designator3_1
+Added Pin To Net: NetName=NetQ3_Designator4_1 Pin=Q3_Designator4-1
+Added Net: Name=NetQ3_Designator4_1
+Added Pin To Net: NetName=NetQ3_Designator5_1 Pin=Q3_Designator5-1
+Added Net: Name=NetQ3_Designator5_1
+Added Pin To Net: NetName=NetQ3_Designator6_1 Pin=Q3_Designator6-1
+Added Net: Name=NetQ3_Designator6_1
+Added Net: Name=NetR8_Designator1_2
+Added Net: Name=NetR8_Designator2_2
+Added Net: Name=NetR8_Designator3_2
+Added Net: Name=NetR8_Designator4_2
+Added Net: Name=NetR8_Designator5_2
+Added Net: Name=NetR8_Designator6_2
+Added Net: Name=NetR10_Designator1_1
+Added Net: Name=NetR10_Designator2_1
+Added Net: Name=NetR10_Designator3_1
+Added Net: Name=NetR10_Designator4_1
+Added Net: Name=NetR10_Designator5_1
+Added Net: Name=NetR10_Designator6_1
+Added Pin To Net: NetName=NetR19_2 Pin=R19-2
+Added Pin To Net: NetName=NetR19_2 Pin=U4-23
+Added Net: Name=NetR19_2
+Added Pin To Net: NetName=NetR20_2 Pin=R20-2
+Added Pin To Net: NetName=NetR20_2 Pin=S2-12
+Added Pin To Net: NetName=NetR20_2 Pin=U4-1
+Added Net: Name=NetR20_2
+Added Pin To Net: NetName=NetR21_2 Pin=R21-2
+Added Pin To Net: NetName=NetR21_2 Pin=S2-11
+Added Pin To Net: NetName=NetR21_2 Pin=U4-2
+Added Net: Name=NetR21_2
+Added Pin To Net: NetName=NetR22_2 Pin=R22-2
+Added Pin To Net: NetName=NetR22_2 Pin=S2-10
+Added Pin To Net: NetName=NetR22_2 Pin=U4-3
+Added Net: Name=NetR22_2
+Added Pin To Net: NetName=NetR23_2 Pin=R23-2
+Added Pin To Net: NetName=NetR23_2 Pin=S2-9
+Added Pin To Net: NetName=NetR23_2 Pin=U4-4
+Added Net: Name=NetR23_2
+Added Pin To Net: NetName=NetR24_2 Pin=R24-2
+Added Pin To Net: NetName=NetR24_2 Pin=S2-8
+Added Pin To Net: NetName=NetR24_2 Pin=U4-5
+Added Net: Name=NetR24_2
+Added Pin To Net: NetName=NetR25_2 Pin=R25-2
+Added Pin To Net: NetName=NetR25_2 Pin=S2-7
+Added Pin To Net: NetName=NetR25_2 Pin=U4-24
+Added Net: Name=NetR25_2
+Added Pin To Net: NetName=NetR26_1 Pin=R26-1
+Added Pin To Net: NetName=NetR26_1 Pin=U4-22
+Added Net: Name=NetR26_1
+Added Pin To Net: NetName=PGND_Designator2 Pin=J2_Designator2-2
+Added Pin To Net: NetName=PGND_Designator2 Pin=Q3_Designator2-2
+Added Net: Name=PGND_Designator2
+Added Pin To Net: NetName=PGND_Designator3 Pin=J2_Designator3-2
+Added Pin To Net: NetName=PGND_Designator3 Pin=Q3_Designator3-2
+Added Net: Name=PGND_Designator3
+Added Pin To Net: NetName=PGND_Designator4 Pin=J2_Designator4-2
+Added Pin To Net: NetName=PGND_Designator4 Pin=Q3_Designator4-2
+Added Net: Name=PGND_Designator4
+Added Pin To Net: NetName=PGND_Designator5 Pin=J2_Designator5-2
+Added Pin To Net: NetName=PGND_Designator5 Pin=Q3_Designator5-2
+Added Net: Name=PGND_Designator5
+Added Pin To Net: NetName=PGND Pin=C9-1
+Added Pin To Net: NetName=PGND Pin=C10-1
+Added Pin To Net: NetName=PGND Pin=J2_Designator1-2
+Added Pin To Net: NetName=PGND Pin=J2_Designator6-2
+Added Pin To Net: NetName=PGND Pin=J4-2
+Added Pin To Net: NetName=PGND Pin=Q3_Designator1-2
+Added Pin To Net: NetName=PGND Pin=Q3_Designator6-2
+Added Net: Name=PGND
+Added Class: Name=Designator1
+Added Class: Name=Designator2
+Added Class: Name=Designator3
+Added Class: Name=Designator4
+Added Class: Name=Designator5
+Added Class: Name=Designator6
+Added Class: Name=RasPi-BplusHAT-MOSFET
+Added Class: Name=MOSFETPowerStage
+Change Room Name: Old Name=RM3 New Name=Designator5
+Change Room Scope: Old Scope=InComponentClass('RM3') New Scope=InComponentClass('Designator5')
+Change Room Name: Old Name=RM4 New Name=Designator6
+Change Room Scope: Old Scope=InComponentClass('RM4') New Scope=InComponentClass('Designator6')
+Added Room: Name=Designator1
+Added Room: Name=Designator2
+Added Room: Name=Designator3
+Added Room: Name=Designator4
+Added Room: Name=RasPi-BplusHAT-MOSFET
