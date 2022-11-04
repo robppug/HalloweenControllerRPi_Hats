@@ -1,0 +1,145 @@
+Removed Pin From Net: NetName=PGND Pin=C4-1
+Removed Pin From Net: NetName=PGND Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=D2-C
+Removed Pin From Net: NetName=PGND Pin=J1_RM1-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM2-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM3-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM4-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM5-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM6-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM7-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM8-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM9-2
+Removed Pin From Net: NetName=PGND Pin=J1_RM10-2
+Removed Pin From Net: NetName=PGND Pin=J2-2
+Removed Pin From Net: NetName=PGND Pin=J3-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM1-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM2-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM3-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM4-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM5-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM6-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM7-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM8-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM9-2
+Removed Pin From Net: NetName=PGND Pin=R2_RM10-2
+Removed Pin From Net: NetName=GND Pin=R4_RM1-2
+Removed Pin From Net: NetName=GND Pin=R4_RM2-2
+Removed Pin From Net: NetName=GND Pin=R4_RM3-2
+Removed Pin From Net: NetName=GND Pin=R4_RM4-2
+Removed Pin From Net: NetName=GND Pin=R4_RM5-2
+Removed Pin From Net: NetName=GND Pin=R4_RM6-2
+Removed Pin From Net: NetName=GND Pin=R4_RM7-2
+Removed Pin From Net: NetName=GND Pin=R4_RM8-2
+Removed Pin From Net: NetName=GND Pin=R4_RM9-2
+Removed Pin From Net: NetName=GND Pin=R4_RM10-2
+Removed Pin From Net: NetName=GND Pin=R9-1
+Removed Pin From Net: NetName=+3V3 Pin=R10-1
+Removed Pin From Net: NetName=+3V3 Pin=R11-1
+Removed Pin From Net: NetName=+3V3 Pin=R12-1
+Removed Pin From Net: NetName=+3V3 Pin=R13-1
+Removed Pin From Net: NetName=+3V3 Pin=R14-1
+Removed Pin From Net: NetName=+3V3 Pin=R15-1
+Removed Pin From Net: NetName=GND Pin=S1-1
+Removed Pin From Net: NetName=GND Pin=S1-2
+Removed Pin From Net: NetName=GND Pin=S1-3
+Removed Pin From Net: NetName=GND Pin=S1-4
+Removed Pin From Net: NetName=GND Pin=S1-5
+Removed Pin From Net: NetName=GND Pin=S1-6
+Removed Pin From Net: NetName=GND Pin=U1_RM1-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM1-3
+Removed Pin From Net: NetName=GND Pin=U1_RM2-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM2-3
+Removed Pin From Net: NetName=GND Pin=U1_RM3-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM3-3
+Removed Pin From Net: NetName=GND Pin=U1_RM4-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM4-3
+Removed Pin From Net: NetName=GND Pin=U1_RM5-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM5-3
+Removed Pin From Net: NetName=GND Pin=U1_RM6-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM6-3
+Removed Pin From Net: NetName=GND Pin=U1_RM7-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM7-3
+Removed Pin From Net: NetName=GND Pin=U1_RM8-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM8-3
+Removed Pin From Net: NetName=GND Pin=U1_RM9-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM9-3
+Removed Pin From Net: NetName=GND Pin=U1_RM10-2
+Removed Pin From Net: NetName=PGND Pin=U1_RM10-3
+Removed Pin From Net: NetName=GND Pin=U2-14
+Removed Pin From Net: NetName=GND Pin=U2-25
+Removed Pin From Net: NetName=SCL Pin=U2-26
+Removed Pin From Net: NetName=SDA Pin=U2-27
+Removed Pin From Net: NetName=+3V3 Pin=U2-28
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=D2
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R8
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R9
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R10
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R11
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R12
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R13
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R14
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R15
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=R16
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=S1
+Removed Member From Class: ClassName=RasPiHAT-MOSFET Member=U2
+Change Component DesignItemId : Designator=J2 Old DesignItemId=1760510000 New DesignItemId=Shortable Link (4 Way)
+Change Component DesignItemId : Designator=J3 Old DesignItemId=1760510000 New DesignItemId=Shortable Link (4 Way)
+Change Component Footprint: Designator=J2 Old Footprint=1760490000 New Footprint=ShortableLink(4Way)
+Change Component Footprint: Designator=J3 Old Footprint=1760490000 New Footprint=ShortableLink(4Way)
+Change Component Comment : Designator=J2 Old Comment=1760510000 New Comment=Shortable Link (4 Way)
+Change Component Comment : Designator=J3 Old Comment=1760510000 New Comment=Shortable Link (4 Way)
+Change Component Designator: OldDesignator=D3 NewDesignator=D1
+Change Component Designator: OldDesignator=R7 NewDesignator=R2
+Change Component Designator: OldDesignator=R8 NewDesignator=R3
+Change Component Designator: OldDesignator=R17 NewDesignator=R1
+Added Component: Designator=J4(1760490000)
+Added Component: Designator=P3(YX5300_UART)
+Added Component: Designator=R3(6-0805_N)
+Added Component: Designator=R5(6-0805_N)
+Added Component: Designator=R5(6-0805_N)
+Added Component: Designator=Y1(R38)
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=SDA Pin=J2-2
+Added Pin To Net: NetName=SCL Pin=J2-3
+Added Pin To Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=+3V3 Pin=J2-5
+Added Pin To Net: NetName=SDA Pin=J3-2
+Added Pin To Net: NetName=SCL Pin=J3-3
+Added Pin To Net: NetName=GND Pin=J3-4
+Added Pin To Net: NetName=+3V3 Pin=J3-5
+Added Pin To Net: NetName=PGND Pin=J3-1
+Added Pin To Net: NetName=GND Pin=P3-1
+Added Pin To Net: NetName=+3V3 Pin=P3-2
+Added Pin To Net: NetName=+3V3 Pin=R3-1
+Change Net Name : Old Net Name=NetD3_A New Net Name=NetD1_A
+Added Pin To Net: NetName=IRQ Pin=K1-13
+Added Pin To Net: NetName=IRQ Pin=R3-2
+Added Net: Name=IRQ
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=Y1-1
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=NetC5_1 Pin=Y1-2
+Added Net: Name=NetC5_1
+Added Pin To Net: NetName=NetJ2_1 Pin=J2-1
+Added Pin To Net: NetName=NetJ2_1 Pin=R5-1
+Added Net: Name=NetJ2_1
+Added Pin To Net: NetName=NetJ3_1 Pin=J3-1
+Added Pin To Net: NetName=NetJ3_1 Pin=R5-1
+Added Net: Name=NetJ3_1
+Added Pin To Net: NetName=NetP3_3 Pin=P3-3
+Added Net: Name=NetP3_3
+Added Pin To Net: NetName=NetP3_4 Pin=P3-4
+Added Net: Name=NetP3_4
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Net: Name=NetR5_2
+Change Class Name : Old Net Name=RasPiHAT-MOSFET New Net Name=RasPiHAT-SOUND
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component J2 Shortable Link (4 Way)
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component J3 Shortable Link (4 Way)
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component J4 1760510000
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component P3 Catalex MP3
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component R3 Res1
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component R5 Res1
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component Y1 11.0592MHz

@@ -1,0 +1,48 @@
+Added Component: Designator=J1_RM1(1760490000)
+Added Component: Designator=J1_RM2(1760490000)
+Added Component: Designator=J1_RM3(1760490000)
+Added Component: Designator=J1_RM4(1760490000)
+Added Component: Designator=J2(1760490000)
+Added Component: Designator=J3(1760490000)
+Added Component: Designator=J4(1760490000)
+Added Component: Designator=J5(1760490000)
+Added Component: Designator=J6(1760490000)
+Added Component: Designator=J7(1760490000)
+Added Component: Designator=J8(1760490000)
+Added Component: Designator=J9(1760490000)
+Added Pin To Net: NetName=NetJ1_RM1_1 Pin=J1_RM1-1
+Added Pin To Net: NetName=NetJ1_RM1_2 Pin=J1_RM1-2
+Added Pin To Net: NetName=NetJ1_RM2_1 Pin=J1_RM2-1
+Added Pin To Net: NetName=NetJ1_RM2_2 Pin=J1_RM2-2
+Added Pin To Net: NetName=NetJ1_RM3_1 Pin=J1_RM3-1
+Added Pin To Net: NetName=NetJ1_RM3_2 Pin=J1_RM3-2
+Added Pin To Net: NetName=NetJ1_RM4_1 Pin=J1_RM4-1
+Added Pin To Net: NetName=NetJ1_RM4_2 Pin=J1_RM4-2
+Added Pin To Net: NetName=+3V3 Pin=J2-1
+Added Pin To Net: NetName=+3V3 Pin=J2-2
+Added Pin To Net: NetName=+3V3 Pin=J3-1
+Added Pin To Net: NetName=+3V3 Pin=J3-2
+Added Pin To Net: NetName=+3V3 Pin=J4-1
+Added Pin To Net: NetName=+3V3 Pin=J4-2
+Added Pin To Net: NetName=+3V3 Pin=J5-1
+Added Pin To Net: NetName=+3V3 Pin=J5-2
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-2
+Added Pin To Net: NetName=GND Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J7-2
+Added Pin To Net: NetName=GND Pin=J8-1
+Added Pin To Net: NetName=GND Pin=J8-2
+Added Pin To Net: NetName=GND Pin=J9-1
+Added Pin To Net: NetName=GND Pin=J9-2
+Added Member To Class: ClassName=RM1 Member=Component J1_RM1 (J1) 1760510000
+Added Member To Class: ClassName=RM2 Member=Component J1_RM2 (J1) 1760510000
+Added Member To Class: ClassName=RM3 Member=Component J1_RM3 (J1) 1760510000
+Added Member To Class: ClassName=RM4 Member=Component J1_RM4 (J1) 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J2 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J3 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J4 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J5 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J6 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J7 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J8 1760510000
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component J9 1760510000

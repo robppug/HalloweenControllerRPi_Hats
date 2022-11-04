@@ -1,6 +1,12 @@
 [ProjectGroup]
 Version=1.0
 [Project1]
-ProjectPath=RasPi-BplusHAT-RELAY.PrjPcb
+ProjectPath=RasPiHAT-SOUND.PrjPcb
 [Project2]
 ProjectPath=RasPiHAT-MOSFET.PrjPcb
+[Project3]
+ProjectPath=RasPiHAT-INPUT.PrjPcb
+[Project4]
+ProjectPath=RasPi-BplusHAT-RELAY.PrjPcb
+[Project5]
+ProjectPath=RasPiHAT-DISPLAY.PrjPcb

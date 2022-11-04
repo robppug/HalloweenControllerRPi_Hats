@@ -1,0 +1,22 @@
+Removed Member From Class: ClassName=RasPiHAT-SOUND Member=J1
+Change Component Designator: OldDesignator=C4 NewDesignator=C6
+Change Component Designator: OldDesignator=C5 NewDesignator=C7
+Added Component: Designator=U1(TSSOP28-65P)
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=NetP3_3 Pin=U1-3
+Added Pin To Net: NetName=NetP3_4 Pin=U1-4
+Added Pin To Net: NetName=+3V3 Pin=U1-5
+Added Pin To Net: NetName=NetC7_1 Pin=U1-6
+Added Pin To Net: NetName=NetC6_2 Pin=U1-7
+Added Pin To Net: NetName=+3V3 Pin=U1-8
+Added Pin To Net: NetName=+3V3 Pin=U1-9
+Added Pin To Net: NetName=NetR5_2 Pin=U1-10
+Added Pin To Net: NetName=NetR6_2 Pin=U1-11
+Added Pin To Net: NetName=SCL Pin=U1-13
+Added Pin To Net: NetName=SDA Pin=U1-14
+Added Pin To Net: NetName=IRQ Pin=U1-15
+Added Pin To Net: NetName=GND Pin=U1-16
+Added Pin To Net: NetName=GND Pin=U1-22
+Added Pin To Net: NetName=NetP4_3 Pin=U1-23
+Added Pin To Net: NetName=NetP4_4 Pin=U1-24
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component U1 SC16IS752

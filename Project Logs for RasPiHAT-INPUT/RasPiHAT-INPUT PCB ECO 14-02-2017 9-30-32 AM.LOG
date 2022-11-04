@@ -1,0 +1,38 @@
+Added Component: Designator=R1_RM1(6-0805_N)
+Added Component: Designator=R1_RM2(6-0805_N)
+Added Component: Designator=R1_RM3(6-0805_N)
+Added Component: Designator=R1_RM4(6-0805_N)
+Added Component: Designator=R2_RM1(6-0805_N)
+Added Component: Designator=R2_RM2(6-0805_N)
+Added Component: Designator=R2_RM3(6-0805_N)
+Added Component: Designator=R2_RM4(6-0805_N)
+Added Pin To Net: NetName=NetR1_RM1_1 Pin=R1_RM1-1
+Added Pin To Net: NetName=NetJ1_RM1_1 Pin=R1_RM1-2
+Added Pin To Net: NetName=NetR1_RM2_1 Pin=R1_RM2-1
+Added Pin To Net: NetName=NetJ1_RM2_1 Pin=R1_RM2-2
+Added Pin To Net: NetName=NetR1_RM3_1 Pin=R1_RM3-1
+Added Pin To Net: NetName=NetJ1_RM3_1 Pin=R1_RM3-2
+Added Pin To Net: NetName=NetR1_RM4_1 Pin=R1_RM4-1
+Added Pin To Net: NetName=NetJ1_RM4_1 Pin=R1_RM4-2
+Added Pin To Net: NetName=+3V3 Pin=R2_RM1-1
+Added Pin To Net: NetName=NetP1_RM1_3 Pin=R2_RM1-2
+Added Pin To Net: NetName=+3V3 Pin=R2_RM2-1
+Added Pin To Net: NetName=NetP1_RM2_3 Pin=R2_RM2-2
+Added Pin To Net: NetName=+3V3 Pin=R2_RM3-1
+Added Pin To Net: NetName=NetP1_RM3_3 Pin=R2_RM3-2
+Added Pin To Net: NetName=+3V3 Pin=R2_RM4-1
+Added Pin To Net: NetName=NetP1_RM4_3 Pin=R2_RM4-2
+Added Member To Class: ClassName=RM1 Member=Component R1_RM1 (R1) Res1
+Added Member To Class: ClassName=RM2 Member=Component R1_RM2 (R1) Res1
+Added Member To Class: ClassName=RM3 Member=Component R1_RM3 (R1) Res1
+Added Member To Class: ClassName=RM4 Member=Component R1_RM4 (R1) Res1
+Added Member To Class: ClassName=RM1 Member=Component R2_RM1 (R2) Res1
+Added Member To Class: ClassName=RM2 Member=Component R2_RM2 (R2) Res1
+Added Member To Class: ClassName=RM3 Member=Component R2_RM3 (R2) Res1
+Added Member To Class: ClassName=RM4 Member=Component R2_RM4 (R2) Res1
+Added Member To Class: ClassName=RasPiHAT-INPUT Member=Component R7 Res1
+Added Room: Name=RasPiHAT-INPUT
+Added Room: Name=RM1
+Added Room: Name=RM2
+Added Room: Name=RM3
+Added Room: Name=RM4

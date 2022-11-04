@@ -1,0 +1,49 @@
+Removed Pin From Net: NetName=GND Pin=C4-1
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=PGND Pin=J4-1
+Removed Pin From Net: NetName=NetR5_2 Pin=R5-2
+Removed Member From Class: ClassName=RasPiHAT-SOUND Member=J4
+Change Component Designator: OldDesignator=R2 NewDesignator=R3
+Change Component Designator: OldDesignator=R3 NewDesignator=R2
+Change Component Designator: OldDesignator=R3 NewDesignator=R4
+Change Component Designator: OldDesignator=R5 NewDesignator=R6
+Added Component: Designator=C6(6-0805_N)
+Added Component: Designator=C7(6-0805_N)
+Added Component: Designator=J1(1760490000)
+Added Component: Designator=P4(YX5300_UART)
+Added Pin To Net: NetName=PGND Pin=C4-1
+Added Pin To Net: NetName=PGND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=PGND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=P4-1
+Added Pin To Net: NetName=+3V3 Pin=P4-2
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=EXT_VCC Pin=C4-2
+Added Pin To Net: NetName=EXT_VCC Pin=C5-2
+Added Pin To Net: NetName=EXT_VCC Pin=J1-2
+Added Net: Name=EXT_VCC
+Added Pin To Net: NetName=NetC6_2 Pin=C4-2
+Added Pin To Net: NetName=NetC6_2 Pin=Y1-1
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetC7_1 Pin=C5-1
+Added Pin To Net: NetName=NetC7_1 Pin=Y1-2
+Added Net: Name=NetC7_1
+Added Pin To Net: NetName=NetP4_3 Pin=P4-3
+Added Net: Name=NetP4_3
+Added Pin To Net: NetName=NetP4_4 Pin=P4-4
+Added Net: Name=NetP4_4
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Net: Name=NetR6_2
+Added Net: Name=NetU1_18
+Added Net: Name=NetU1_19
+Added Net: Name=NetU1_20
+Added Net: Name=NetU1_21
+Added Net: Name=NetU1_25
+Added Net: Name=NetU1_26
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component C6 Cap
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component C7 Cap
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component J1 1760510000
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component P4 Catalex MP3
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component R4 Res1
+Added Member To Class: ClassName=RasPiHAT-SOUND Member=Component R6 Res1

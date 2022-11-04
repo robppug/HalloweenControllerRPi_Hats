@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GND Pin=P?-1
+Removed Pin From Net: NetName=GND Pin=P?-2
+Removed Pin From Net: NetName=GND Pin=P?-3
+Removed Pin From Net: NetName=GND Pin=P?-4
+Removed Pin From Net: NetName=GND Pin=P?-5
+Removed Pin From Net: NetName=GND Pin=P?-6
+Removed Pin From Net: NetName=GND Pin=P?-7
+Removed Pin From Net: NetName=GND Pin=P?-8
+Change Component Footprint: Designator=P? Old Footprint=HDR1X8H New Footprint=8 Pin - Side Mount
+Added Component: Designator=P?(8 Pin - Side Mount)
+Added Pin To Net: NetName=GND Pin=P?-1
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-3
+Added Pin To Net: NetName=GND Pin=P?-4
+Added Pin To Net: NetName=GND Pin=P?-5
+Added Pin To Net: NetName=GND Pin=P?-6
+Added Pin To Net: NetName=GND Pin=P?-7
+Added Pin To Net: NetName=GND Pin=P?-8
